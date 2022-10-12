@@ -2,10 +2,10 @@ import pyqrcode
 
 from pyqrcode import QRCode
 
-string = "https://github.com"
+string = input('Enter your string: ')
 
 url = pyqrcode.create(string)
 
-url.svg("myQR.svg", scale=8)
+url.svg('QR.svg', scale=8)
 
-url.png("myQR.png", scale=6)
+url.png('QR.png', scale=6)
